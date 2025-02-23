@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4622546505900850097}
   - component: {fileID: 4364242158159533686}
   - component: {fileID: 5340265033512429760}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: door_frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 610575502628953516}
   - component: {fileID: 1999548170439154141}
   - component: {fileID: 3454338502550970005}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: door_body
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4322550207215443971}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}

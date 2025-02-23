@@ -71,9 +71,21 @@ public class Pick_up : MonoBehaviour
                     }
 
                 }
+                else if (hit.collider.CompareTag("Interacteble")) 
+                {
+                isAimingAtPickupable = true;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    hit.collider.GetComponent<IItem_to_use>().Interact(holdet_item);
 
 
-            }  
+                }
+
+
+            }
+
+
+        }  
         
         
         
