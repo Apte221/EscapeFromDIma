@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pickupable
   - Door
+  - Interacteble
   layers:
   - Default
   - TransparentFX
