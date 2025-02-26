@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 6424377009060270241}
   - component: {fileID: 3664692409181349444}
   - component: {fileID: 780497386403923871}
+  - component: {fileID: 5456185697273344216}
   m_Layer: 0
   m_Name: Main_ch
   m_TagString: Untagged
@@ -250,3 +251,22 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5456185697273344216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8839335382303728426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60a8d8f1a8f80a4eb77c21d897945e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handTr: {fileID: 0}
+  pickupDs: 5
+  power: 5
+  crosshair: {fileID: 0}
+  normalSize: 20
+  enlargedSize: 40
+  scaleSpeed: 10

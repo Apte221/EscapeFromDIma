@@ -1209,6 +1209,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5456185697273344216, guid: eba26a6f9c596974cbef3747c85d8bc5, type: 3}
+      propertyPath: handTr
+      value: 
+      objectReference: {fileID: 2056376443}
+    - target: {fileID: 5456185697273344216, guid: eba26a6f9c596974cbef3747c85d8bc5, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 2143037791}
     - target: {fileID: 6424377009060270241, guid: eba26a6f9c596974cbef3747c85d8bc5, type: 3}
       propertyPath: m_Size.x
       value: 1
@@ -1231,10 +1239,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5047508434684511705, guid: eba26a6f9c596974cbef3747c85d8bc5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2056376443}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8839335382303728426, guid: eba26a6f9c596974cbef3747c85d8bc5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1335064996}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eba26a6f9c596974cbef3747c85d8bc5, type: 3}
 --- !u!1 &1218994168
 GameObject:
@@ -1415,36 +1420,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293652371}
   m_CullTransparentMesh: 1
---- !u!1 &1335064990 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8839335382303728426, guid: eba26a6f9c596974cbef3747c85d8bc5, type: 3}
-  m_PrefabInstance: {fileID: 1200728507}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1335064996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335064990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a60a8d8f1a8f80a4eb77c21d897945e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handTr: {fileID: 2056376443}
-  pickupDs: 5
-  power: 5
-  crosshair: {fileID: 2143037791}
-  normalSize: 20
-  enlargedSize: 40
-  scaleSpeed: 10
 --- !u!114 &1335064998 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3664692409181349444, guid: eba26a6f9c596974cbef3747c85d8bc5, type: 3}
   m_PrefabInstance: {fileID: 1200728507}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335064990}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df8abc412c8de894a8792033fcfbe63f, type: 3}
