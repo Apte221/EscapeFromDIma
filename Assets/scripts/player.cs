@@ -63,7 +63,8 @@ public class Player : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        // Îáåðòàííÿ êàìåðè çà äîïîìîãîþ ìèø³ (ïî îñ³ X)
+        
+        if(Time.timeScale == 1f){
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
@@ -72,7 +73,7 @@ public class Player : MonoBehaviour
 
         playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX); // Îáåðòàííÿ ò³ëà ïî îñ³ Y
-
+        }
         if(Stamina > 20 && Input.GetKey(KeyCode.LeftShift))
         {
             moveSpeed = runSpeed;
@@ -99,6 +100,13 @@ public class Player : MonoBehaviour
                 StaminaBar.fillAmount = StaminaBar.fillAmount ;
             }
         }
+        if(Time.timeScale == 0f){
+            playerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            playerBody.Rotate(0f,0f,0f);
+            
+            
+        }
+        
 
     }
     private IEnumerator RechargeStamina(){

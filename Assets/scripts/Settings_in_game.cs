@@ -9,18 +9,27 @@ using UnityEngine.UI;
 
 public class Settings_in_game : MonoBehaviour
 {
-
-    public Canvas settings;
+    public GameObject settings;
     public Button settings_menu;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        GameObject.Find("settings");
+         if (settings == null){
+            settings = GameObject.FindGameObjectWithTag("Settings");
+         }
+        settings_menu.onClick.AddListener(Click);
+        if (settings == GameObject.FindGameObjectWithTag("Settings")){
+            settings.SetActive(true) ;
+
+    }
     }
 
     // Update is called once per frame
     void Update()
     {
-    //    if(OnButtonClick)
+
+    }
+    void Click(){
+        
     }
 }

@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class pause_menu : MonoBehaviour
 {
-    private bool gamepaused = false;
+    [SerializeField] private bool gamepaused = false;
     public GameObject Escape_menu;
+    public GameObject settings_menu;
+    public GameObject settings;
+
     // Start is called before the first frame update
     
 
@@ -21,17 +24,25 @@ public class pause_menu : MonoBehaviour
                 Pause();
             }
        } 
+
     }
     void Resume(){
         Escape_menu.SetActive(false);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked; 
         gamepaused = false;
+
+        
     }
     void Pause(){
         Escape_menu.SetActive(true);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         gamepaused = true;
-    }
+
+        }
+
 }
+    
+    
+
