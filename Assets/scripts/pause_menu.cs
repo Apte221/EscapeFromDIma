@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class pause_menu : MonoBehaviour
 {
-    [SerializeField] private bool gamepaused = false;
+    protected bool gamepaused  = false;
     public GameObject Escape_menu;
     public GameObject settings_menu;
     public GameObject settings;

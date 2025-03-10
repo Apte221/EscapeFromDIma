@@ -3,11 +3,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class play_button : MonoBehaviour
+public class play_button : pause_menu
 {
-    private bool gamepaused = false;
-    public GameObject Escape_menu;
-    public GameObject settings_menu;
+  
+
 
 
     public Button button;
